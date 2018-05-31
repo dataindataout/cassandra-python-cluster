@@ -105,7 +105,6 @@ services:
 # PMM
 
     pmm-data:
-        build: .
         image: percona/pmm-server
         container_name: pmm-data
         networks: 
@@ -118,7 +117,6 @@ services:
         entrypoint: /bin/true
 
     pmm-server:
-        build: .
         container_name: pmm-server
         image: percona/pmm-server
         restart: always
