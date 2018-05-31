@@ -11,7 +11,7 @@ services:
 # application server
     app:
         container_name: app
-        image: cassandra-python
+        image: dataindataout/cassandra-python
         hostname: app
         networks:
           myring:
