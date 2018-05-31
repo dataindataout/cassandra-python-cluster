@@ -1,7 +1,7 @@
 version: '2'
 
 ################################################
-# adjacents docker-compose file for cassandra + PMM
+# adjacents docker-compose file for cassandra + python
 # updated May 2018
 # author: Valerie Parham-Thompson
 
@@ -31,8 +31,6 @@ services:
         volumes:
             - ./n1data:/var/lib/cassandra
             - ./configuration/cassandra-env.sh:/etc/cassandra/cassandra-env.sh
-            - ./cassandra-prometheus-2.0.0-jar-with-dependencies.jar:/usr/local/cassandra-prometheus-2.0.0-jar-with-dependencies.jar
-            - ./configure-pmm-client.sh:/usr/local/bin/configure-pmm-client.sh
         ports:
           - "127.0.0.1:7401:7400"
         environment:
@@ -56,8 +54,6 @@ services:
         volumes:
             - ./n2data:/var/lib/cassandra
             - ./configuration/cassandra-env.sh:/etc/cassandra/cassandra-env.sh
-            - ./cassandra-prometheus-2.0.0-jar-with-dependencies.jar:/usr/local/cassandra-prometheus-2.0.0-jar-with-dependencies.jar
-            - ./configure-pmm-client.sh:/usr/local/bin/configure-pmm-client.sh
         ports:
           - "127.0.0.1:7402:7400"
         environment:
@@ -83,8 +79,6 @@ services:
         volumes:
             - ./n3data:/var/lib/cassandra
             - ./configuration/cassandra-env.sh:/etc/cassandra/cassandra-env.sh
-            - ./cassandra-prometheus-2.0.0-jar-with-dependencies.jar:/usr/local/cassandra-prometheus-2.0.0-jar-with-dependencies.jar
-            - ./configure-pmm-client.sh:/usr/local/bin/configure-pmm-client.sh
         ports:
           - "127.0.0.1:7403:7400"
         environment:
