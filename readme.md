@@ -10,6 +10,8 @@ This cluster will support Cassandra applications using the Python driver.
 You can do something like the following on the app container to do a test of your setup.
 
 ```
+python
+
 from cassandra.cluster import Cluster
 
 cluster = Cluster(['172.16.238.2', '172.16.238.3', '172.16.238.4'])
