@@ -3,11 +3,11 @@ this repo
 
 # How to use
 
-This image will support Cassandra applications using the Python driver.
+This cluster will support Cassandra applications using the Python driver.
 
 # Driver test
 
-You can do something like the following to do a test of your setup.
+You can do something like the following on the app container to do a test of your setup.
 
 ```
 from cassandra.cluster import Cluster
