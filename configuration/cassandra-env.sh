@@ -321,6 +321,6 @@ if [ "x$MX4J_PORT" != "x" ]; then
 fi
 
 # added for Prometheus
-JVM_OPTS="$JVM_OPTS -javaagent:/usr/local/cassandra-prometheus-2.0.0-jar-with-dependencies.jar=7400"
+#JVM_OPTS="$JVM_OPTS -javaagent:/usr/local/cassandra-prometheus-2.0.0-jar-with-dependencies.jar=7400"
 
 JVM_OPTS="$JVM_OPTS $JVM_EXTRA_OPTS"
